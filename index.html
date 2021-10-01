@@ -10,61 +10,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- vendors -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/components/icon.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/components/icon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/components/image.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
     <!-- my files -->
     <link rel="stylesheet" type="text/css" media="screen" href="/resources/css/main.css" />
     <link rel="manifest" href="/manifest.json">
 </head>
 
 <body>
-    <div class="section center" id="me">
-        <div id="container">
-            <div id="image" class="ui medium bordered rounded image">
-                <a title="William's instagram" accesskey="i" href="https://www.instagram.com/clanfalconer_/">
-                    <img src="/resources/images/me.jpeg" decoding=async alt="Picture of William Falconer with link to visit his instagram account">
-                </a>
-            </div>
-            <div id="info" role="main">
-                <p>
-                    Hi, I'm
-                    <strong>William D. Falconer</strong>,
-                    <br />Software Engineer
-                </p>
-                <div>
-                    <div class="icon-group">
-                        <a title="send William an email" accesskey="e" href="mailto:williamfalconer6@gmail.com?subject=Hello,%20I'm%20interested%20in%20working%20with%20you.">
-                            <i class="envelope large icon"></i>
-                        </a>
-                    </div>
-                    <div class="icon-group">
-                        <a title="contact William through telegram" accesskey="t" href="http://www.t.me/WilliamFalconer">
-                            <i class="telegram large icon"></i>
-                        </a>
-                        <a title="download William's resume" accesskey="r" href="https://williamfalconerresume.netlify.app/">
-                            <i class="file pdf outline large icon"></i>
-                        </a>
-                    </div>
-                    <div class="icon-group">
-                        <a title="William's github" accesskey="g" href="https://github.com/WiFalconer">
-                            <i class="github large icon"></i>
-                        </a>
-                    </div>
-                    <div class="icon-group">
-                        <a title="William's linkedin" accesskey="l" href="https://www.linkedin.com/in/wifalconerpabon/">
-                            <i class="linkedin large icon"></i>
-                        </a>
-                    </div>
-                    <div class="icon-group">
-                        <a title="William's personal projects" accesskey="p" href="https://drip-pr.com/">
-                            <i class="shopping cart large icon"></i>
-                        </a>
+    <div id="vanta">
+        <div class="section center" id="me">
+            <div id="container">
+                <div id="image" class="ui medium circular image">
+                    <a title="William's instagram" accesskey="i" href="https://www.instagram.com/clanfalconer_/">
+                        <img src="/resources/images/me.png" decoding=async
+                            alt="Picture of William Falconer with link to visit his instagram account">
+                    </a>
+                </div>
+                <div id="info" role="main">
+                    <p>
+                        Hello World!
+                        I'm <strong> William D. Falconer</strong>,
+                        <br />Software Engineer
+                    </p>
+                    <div>
+                        <div class="icon-group">
+                            <a title="send William an email" accesskey="e"
+                                href="mailto:williamfalconer6@gmail.com?subject=Hello,%20I'm%20interested%20in%20working%20with%20you.">
+                                <i class="envelope large icon"></i>
+                            </a>
+                        </div>
+                        <div class="icon-group">
+                            <a title="contact William through telegram" accesskey="t"
+                                href="http://www.t.me/WilliamFalconer">
+                                <i class="telegram large icon"></i>
+                            </a>
+                            <a title="download William's resume" accesskey="r"
+                                href="https://williamfalconerresume.netlify.app/">
+                                <i class="file pdf outline large icon"></i>
+                            </a>
+                        </div>
+                        <div class="icon-group">
+                            <a title="William's github" accesskey="g" href="https://github.com/WiFalconer">
+                                <i class="github large icon"></i>
+                            </a>
+                        </div>
+                        <div class="icon-group">
+                            <a title="William's linkedin" accesskey="l"
+                                href="https://www.linkedin.com/in/wifalconerpabon/">
+                                <i class="linkedin large icon"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            VANTA.NET({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x5A8487,
+                backgroundColor: 0x000000
+            })
+        </script>
     </div>
 </body>
 
 </html>
-
